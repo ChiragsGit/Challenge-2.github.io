@@ -1,0 +1,134 @@
+/* Typography */
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    line-height: 18px;
+}
+
+
+/* Layout */
+
+body {
+    /* setting background gif */
+    background-image: url(../Pictures/back\ alley\ computer\ shop.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    /* styled the nav to be larger and spread evenly on the page        */
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-evenly;
+    backdrop-filter: blur(5px);
+
+}
+
+nav a {
+    /* made the nav act like a button where there is a box you can hit instead only on the text and a transition        */
+    display: block;
+    padding: 15px 45px;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* added a hover feature when you hover over the nav tab where it will be a background blue indicating which button you are on.         */
+    background-color: rgb(87, 182, 201);
+    ;
+}
+
+
+.flex {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.flex a {
+    text-decoration: none;
+    color: #E7D4C0;
+}
+
+.flex a:hover {
+    /* when you hover over the link in text it will change colour indicating you are hovering over a hyperlink        */
+    text-decoration: underline;
+}
+
+#features>div {
+    /* changed the background colour where it is dark blue to match the theme         */
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(27, 32, 50, 255);
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+img {
+    max-height: 300px;
+    width: auto;
+}
+
+main section {
+    padding: 60px 20px 0 20px;
+}
+
+#playlist th {
+    background-color: #E7D4C0;
+}
+
+#playlist {
+    margin: 0 auto;
+    letter-spacing: 1px;
+    text-align: center;
+    width: auto;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+#playlist tr:nth-child(odd) {
+    background-color: rgb(87, 182, 201)
+}
+
+#playlist tr:nth-child(even) {
+    background-color: rgba(27, 32, 50, 255);
+}
+
+#features ul {
+    /* styled ul list        */
+    list-style-type: circle;
+}
+
+#features ol {
+    /* styled ol list         */
+    list-style-type: upper-roman;
+}
